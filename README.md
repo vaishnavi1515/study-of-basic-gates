@@ -70,7 +70,19 @@ Program for logic gates and verify its truth table in quartus using Verilog prog
 
 
  Register Number:24900560
-
+ ```
+module log_gat(a,b,c1,c2,c3,c4,c5,c6,c7);
+input a,b;
+output c1,c2,c3,c4,c5,c6,c7;
+not G1(c1,a);
+and G2(c2,a,b);
+or G3(c3,a,b);
+nand G4(c4,a,b);
+nor G5(c5,a,b);
+xor G6(c6,a,b);
+xnor G7(c7,a,b);
+endmodule
+```
  
 **Logic symbol & Truthtable**
 
